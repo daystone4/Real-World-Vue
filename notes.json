@@ -1,0 +1,16 @@
+{
+    notes: {
+
+    
+    // EventService file is created within the services folder in order to modularize our API code. It is cleaner and more scalable
+
+    //At the top, we’re importing Axios. Below that, we’ve added an apiClient constant, which holds our singular Axios instance. As you can see, we’ve set up a baseURL and some other configurations for Axios to use as it communicates with our server.
+
+    // Now that we’ve set that up, we can export a method that gets our events, using our new Axios apiClient.
+
+
+    // As you can see, we still have access to the Axios get method, and we’re passing in '/events' as the argument when making this call. This string will be added to our baseURL, so the request will be made to: 'https://my-json-server.typicode.com/Code-Pop/Real-World_Vue-3/events'
+
+    // Next up, we just need to make use of this new EventService within our EventList.vue component, deleting out the Axios import, importing the EventService, and running its getEvents() call.
+    }
+}
